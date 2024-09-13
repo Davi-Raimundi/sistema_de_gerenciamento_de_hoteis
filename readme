@@ -1,0 +1,49 @@
+# Sistema de Gerenciamento de Hotel
+
+Este projeto implementa um sistema de gerenciamento de hotel usando MySQL. O banco de dados gerencia hóspedes, quartos e reservas, permitindo a criação, atualização, exclusão e consulta de dados relacionados.
+
+## Estrutura do Banco de Dados
+
+O banco de dados é composto pelas seguintes tabelas:
+
+1. **hospedes**
+   - `id_hospede` (INT, PK, AUTO_INCREMENT): Identificador único do hóspede.
+   - `nome` (VARCHAR(100), NOT NULL): Nome do hóspede.
+   - `telefone` (VARCHAR(15)): Número de telefone do hóspede.
+   - `email` (VARCHAR(100), NOT NULL): E-mail do hóspede.
+
+2. **quartos**
+   - `id_quarto` (INT, PK, AUTO_INCREMENT): Identificador único do quarto.
+   - `numero` (INT, UNIQUE, NOT NULL): Número do quarto.
+   - `tipo` (VARCHAR(50), NOT NULL): Tipo do quarto (ex: single, double, suite).
+   - `preco` (DECIMAL(10,2), NOT NULL): Preço do quarto por noite.
+
+3. **reservas**
+   - `id_reserva` (INT, PK, AUTO_INCREMENT): Identificador único da reserva.
+   - `id_hospede` (INT): Identificador do hóspede (FK para `hospedes`).
+   - `id_quarto` (INT): Identificador do quarto (FK para `quartos`).
+   - `data_checkin` (DATE, NOT NULL): Data de check-in.
+   - `data_checkout` (DATE, NOT NULL): Data de check-out.
+
+## Operações
+
+- **Criação e Atualização**: Insere e atualiza dados nas tabelas `hospedes`, `quartos`, e `reservas`.
+- **Consultas**: Obtém informações sobre hóspedes, quartos e reservas. Também permite consultar quartos disponíveis em uma faixa de datas específica.
+- **Exclusão**: Remove hóspedes e reservas do banco de dados.
+
+## Scripts SQL
+
+Os scripts SQL para criar as tabelas, inserir dados, e executar consultas estão disponíveis no arquivo `setup.sql`.
+
+## Uso
+
+1. **Configuração do Banco de Dados**: Execute o script `setup.sql` em seu ambiente MySQL.
+2. **Consulta de Dados**: Utilize as consultas fornecidas para obter informações sobre hóspedes, quartos e reservas.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com melhorias e correções para este projeto. Envie um pull request ou abra uma issue para discussões.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
