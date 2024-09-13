@@ -1,0 +1,12 @@
+# Ignorar arquivos temporários e de configuração do MySQL
+*.sql
+*.log
+
+# Ignorar arquivos de configuração do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos gerados por IDEs
+.idea/
+.vscode/
+*.iml
