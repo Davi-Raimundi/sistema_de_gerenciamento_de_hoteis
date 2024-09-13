@@ -1,0 +1,20 @@
+O projeto consiste na criação de um sistema de gerenciamento de hotel utilizando um banco de dados MySQL. O objetivo principal é fornecer um mecanismo para gerenciamento de hóspedes, quartos e reservas, com a capacidade de realizar operações básicas como criação
+
+2. Estrutura do Banco de Dados
+O banco de dados hotelManagentSystemé c
+
+hospedes :
+quartos : Contém pai
+reservas : Ge
+3. Criação e Manipulação de Dados
+Os seguintes scripts SQL são usados ​​para a criação e manipulação do banco de dados:
+
+Criação das Tabelas: Roteirohospedes, `qquartosereservas.
+Inserção de Dados : Scripts
+Consultas : Exemp
+Atualizações e Exclusões :
+4. Consultas de Exemplos
+Consulta de Hóspedes e Reservas : Obtém uma
+Consulta de Quartos Disponíveis : Iden
+5. Considerações Finais
+Este projeto fornece uma base sólida para um sistema de gerenciamento de hotel, cobrindo operações essenciais e oferecendo um ponto de partida para futuras melhorias e extensões. Recomenda-se implementar controles adicionais de segurança e validação conforme necessário para adequar o sistema aos ambientes
